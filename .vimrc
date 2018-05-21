@@ -88,3 +88,4 @@ let g:tex_flavor='latex'
 set sw=2
 set iskeyword+=:
 let b:suppress_latex_suite = 1
+"dddd
