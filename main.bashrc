@@ -1,1 +1,1 @@
-source /root/rcClub/base.bashrc
+source /home/geek/rcClub/base.bashrc
