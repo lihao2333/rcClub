@@ -1,1 +1,10 @@
 source ~/rcClub/base_cmd.sh
+source ~/rcClub/msp.sh
+source ~/rcClub/trash.sh
+source ~/rcClub/iptb.sh
+source ~/rcClub/ele.sh
+source ~/rcClub/imgk.sh
+source ~/rcClub/bupt.sh
+source ~/rcClub/gcc.sh
+source ~/rcClub/dkr.sh
+source ~/rcClub/cl.sh
