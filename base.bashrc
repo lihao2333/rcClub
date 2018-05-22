@@ -1,8 +1,19 @@
 alias l="ls"
 alias c="cd"
 alias la="ls -a"
+alias le="less"
 alias py="python"
 alias py3="python3"
+v_source()
+{
+ vim `which $1`
+}
+f()
+{
+echo 1is $1
+echo 2is $2
+find $2 -name "$1"
+}
 up()
 {
 	tmp=..   # finally `cd` parameter
