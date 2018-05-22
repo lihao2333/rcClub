@@ -8,3 +8,4 @@ source ~/rcClub/bupt.sh
 source ~/rcClub/gcc.sh
 source ~/rcClub/dkr.sh
 source ~/rcClub/cl.sh
+source ~/rcClub/static.sh
