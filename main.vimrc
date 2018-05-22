@@ -1,1 +1,1 @@
-source /home/geek/rcClub/base.vimrc
+source /root/rcClub/base.vimrc
