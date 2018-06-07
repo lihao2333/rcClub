@@ -65,8 +65,10 @@ gitall()
 {
 git add -A
 git commit -m "$1"
-
 }
+alias gitb="git branch"
+alias gitc="git checkout"
+alias gits="git status"
 pathadd() {
   echo "Adding $1 to PATH"
   if [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]]; then
@@ -86,7 +88,7 @@ ldpathadd() {
 alias show_gpu="lspci  | grep -i vga"
 gbk2utf8()
 {
-conv -f gbk -t utf8 $1 -o tmp.tmp
+iconv -f gbk -t utf8 $1 -o tmp.tmp
 mv tmp.tmp $1
 }
 utf82gbk()
