@@ -26,6 +26,8 @@ colorscheme ron
             exec "!firefox % &"
         elseif &filetype == 'go'
             exec "! go run %"
+        elseif &filetype == 'lua'
+            exec "! th %"
         elseif &filetype == 'mkd'
             exec "!~/.vim/markdown.pl % > %.html &"
             exec "!firefox %.html &"
