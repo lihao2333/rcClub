@@ -1,1 +1,1 @@
-#source ~/torch-cl/install/bin/torch-activate
+source ~/torch-cl/install/bin/torch-activate

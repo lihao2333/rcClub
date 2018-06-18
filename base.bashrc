@@ -4,6 +4,7 @@ alias la="ls -a"
 alias le="less"
 alias py="python"
 alias py3="python3"
+alias go_rc="cd ~/rcClub"
 v_source()
 {
  vim `which $1`

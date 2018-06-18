@@ -1,9 +1,10 @@
 source /home/geek/rcClub/base.bashrc
 source /home/geek/rcClub/bd.bashrc
-source /home/geek/rcClub/bupt.bashrc
+source /home/geek/rcClub/bt.bashrc
 source /home/geek/rcClub/cl.bashrc
 source /home/geek/rcClub/clk.bashrc
 source /home/geek/rcClub/cltorch.bashrc
+source /home/geek/rcClub/cv.bashrc
 source /home/geek/rcClub/dkr.bashrc
 source /home/geek/rcClub/ele.bashrc
 source /home/geek/rcClub/gcc.bashrc
