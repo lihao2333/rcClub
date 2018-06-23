@@ -5,6 +5,7 @@ source /home/geek/rcClub/cl.bashrc
 source /home/geek/rcClub/clk.bashrc
 source /home/geek/rcClub/cltorch.bashrc
 source /home/geek/rcClub/cv.bashrc
+source /home/geek/rcClub/djgo.bashrc
 source /home/geek/rcClub/dkr.bashrc
 source /home/geek/rcClub/ele.bashrc
 source /home/geek/rcClub/gcc.bashrc

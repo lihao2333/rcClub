@@ -30,8 +30,17 @@ export ALTERAOCLSDKROOT=/home/Proj/Intel/Install/hld
 
 
 
-
+cldkr_run()
+{
+docker run -it --rm -p 8000:8000 \
+	-v /home/Proj/Intel/neutrul-style/neural_web:/workspace/neural_web \
+	-v /home/Proj/Intel/neutrul-style/fast-neural-style-tensorflow:/workspace/fast-neural-style-tensorflow \
+	-w /workspace/neural_web \
+	lihao2333/tensorflow:v1  /bin/bash
+}
+alias clgo_report="cd /home/Proj/Intel/report"
 alias clgo_template="cd /home/geek/Proj/TP_OPENCL"
+alias clgo_web="cd /home/Proj/Intel/neutrul-style/neural_web"
 alias clgo_c5pdriver="cd $AOCL_BOARD_PACKAGE_ROOT/linux64/libexec"
 alias clgo_c5p="cd $AOCL_BOARD_PACKAGE_ROOT" 
 alias clgo_manual="cd /home/Proj/Intel/Resource/CD-ROMs/Manual"
