@@ -12,9 +12,11 @@ source /home/geek/rcClub/gcc.bashrc
 source /home/geek/rcClub/imgk.bashrc
 source /home/geek/rcClub/iptb.bashrc
 source /home/geek/rcClub/ltx.bashrc
+source /home/geek/rcClub/lua.bashrc
 source /home/geek/rcClub/msp.bashrc
 source /home/geek/rcClub/other.bashrc
 source /home/geek/rcClub/py.bashrc
 source /home/geek/rcClub/sttc.bashrc
 source /home/geek/rcClub/tc.bashrc
 source /home/geek/rcClub/trash.bashrc
+source /home/geek/rcClub/vps.bashrc

@@ -1,2 +1,4 @@
-imgk_negate(){ convert -negate $1 $1; }
-
+imgk_help()
+{
+le $RC_ROOT/im.help
+}

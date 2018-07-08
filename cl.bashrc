@@ -35,9 +35,48 @@ cldkr_run()
 docker run -it --rm -p 8000:8000 \
 	-v /home/Proj/Intel/neutrul-style/neural_web:/workspace/neural_web \
 	-v /home/Proj/Intel/neutrul-style/fast-neural-style-tensorflow:/workspace/fast-neural-style-tensorflow \
+	-v /home/Proj/Intel/neutrul-style/neural-style_diy:/workspace/neural-style_diy\
+	--privileged -v /dev:/dev\
+	--name intel\
+	--net=host\
 	-w /workspace/neural_web \
-	lihao2333/tensorflow:v1  /bin/bash
+	--entrypoint /bin/bash \
+	lihao2333/intel:v3 \
+	-c "ls;ls ..;python3 manage.py runserver 0.0.0.0:8000"
 }
+cldkr_access()
+{
+docker run -it -p 8000:8000 \
+	-v /home/Proj/Intel/neutrul-style/neural_web:/workspace/neural_web \
+	-v /home/Proj/Intel/neutrul-style/fast-neural-style-tensorflow:/workspace/fast-neural-style-tensorflow \
+	-v /home/Proj/Intel/neutrul-style/neural-style_diy:/workspace/neural-style_diy\
+	-v /home/Repo/Model/:/workspace/Model\
+	-v /home/Repo/Dataset/:/workspace/Dataset\
+	--privileged -v /dev:/dev\
+	--name intel_access\
+	--net=host\
+	-w /workspace/neural_web \
+	--entrypoint /bin/bash \
+	lihao2333/intel:v3 
+}
+cldkr_start()
+{
+	docker start -ai intel_access
+}
+cldkr_access_simple()
+{
+docker run -it --rm -p 8000:8000 \
+	-v `pwd`:/workspace/proj\
+	-v /home/Repo/Model/:/workspace/Model\
+	-v /home/Repo/Dataset/:/workspace/Dataset\
+	--privileged -v /dev:/dev\
+	--name intel_access_simple\
+	--net=host\
+	-w /workspace/proj \
+	--entrypoint /bin/bash \
+	lihao2333/intel:v3 
+}
+alias clgo_tf_start="cd /home/geek/Proj/T_tensorflow/models/samples/core/get_started"
 alias clgo_report="cd /home/Proj/Intel/report"
 alias clgo_template="cd /home/geek/Proj/TP_OPENCL"
 alias clgo_web="cd /home/Proj/Intel/neutrul-style/neural_web"

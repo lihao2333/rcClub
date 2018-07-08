@@ -16,8 +16,11 @@ py_help_re()
 	echo -- 结论:match如果一开始匹配不到, 就返回none, search如果一开始匹配不到, 就从下一个位置开始匹配
 	echo -- 替换
 	echo "re.sub('content', 'style','geek_content.jpg') -- return geek_style.jpg"
-
-
-
-
+	echo "re.sub('.*\.', 'style','geek_content.jpg') -- return style.jpg" 保持后缀不变替换文件名
+}
+py_help_future()
+{
+	echo from __future__ import absolute_import
+	echo from __future__ import division
+	echo from __future__ import print_function
 }

@@ -1,3 +1,4 @@
+export RC_ROOT="/home/geek/rcClub"
 alias l="ls"
 alias c="cd"
 alias la="ls -a"

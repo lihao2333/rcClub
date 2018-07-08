@@ -33,3 +33,5 @@ colorscheme ron
             exec "!firefox %.html &"
         endif
     endfunc
+
+"-----------latex

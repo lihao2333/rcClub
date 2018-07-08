@@ -1,0 +1,24 @@
+%-------------创建图片----------------- 
+convert -size 800x800 canvas:white white.png
+%-------------图片格式转换----------------- 
+convert foo.jpg foo.png
+convert *.jpg foo.pdf	%将多张图片转换为pdf
+%-------------缩放----------------- 
+convert -resize 100x100 foo.jpg output.jpg 保证x匹配,但是y不一定匹配,因为会自动保证xy比例
+convert -resize 100x100! foo.jpg output.jpg 强制比例
+convert -resize 50%x50% foo.jpg output.jpg 
+mogrify -sample 80x60 *.jpg  %批量生成缩略图,会覆盖,记得备份
+%-------------翻转----------------- 
+convert -flip foo.png bar.png%上下翻转
+convert -flop foo.png bar.png%左右翻转
+%-------------旋转----------------- 
+convert -rotate 30 foo.png bar.png%右正左负
+%-------------反色----------------- 
+convert -negate foo.png bar.png
+%-------------油画效果----------------- 
+convert -paint 4 foo.png bar.png
+%-------------显示图片----------------- 
+display foo.png
+display *.png
+display -delay 5 * 幻灯片每5毫秒切换一张
+
