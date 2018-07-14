@@ -1,9 +1,19 @@
 "base{
-	set nu
-	set autoindent
-	set tabstop=4
-	set softtabstop=4
+    set nu
 	colorscheme ron
+"}
+"enter{
+    autocmd VimEnter * if@%=='base.vimrc'| echo 'hello'
+"}
+"indent{
+	set autoindent
+	set tabstop=4 
+	set softtabstop=4
+	set shiftwidth=4
+    autocmd VimEnter * if @%!='Makefile'|set expandtab
+"}
+"cursor{
+    set cursorline
 "}
 "switch window{
 	nnoremap <C-J> <C-W><C-J>
@@ -17,7 +27,7 @@
 	nnoremap <M-d>  <C-w>p<C-d><C-w>p
 	nnoremap <M-u>  <C-w>p<C-u><C-w>p
 "}
-"-----------quickly run-------------------
+"quick run{
     map <F5> :call CompileRunGcc()<CR>
     func! CompileRunGcc()
         exec "w"
@@ -48,7 +58,7 @@
             exec "!firefox %.html &"
         endif
     endfunc
-"--------------html_pretty----------------
+"}
 "prettify{
 	execute "set <M-p>=\ep"
 	map <M-p> : call Html_Prettify()<CR>
