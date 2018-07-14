@@ -10,10 +10,12 @@
 	set tabstop=4 
 	set softtabstop=4
 	set shiftwidth=4
-    autocmd VimEnter * if @%!='Makefile'|set expandtab
+	set expandtab
+    autocmd VimEnter * if @%!='Makefile'|set expandtab|echo "hi"
+    	
 "}
 "cursor{
-    set cursorline
+"    set cursorline
 "}
 "switch window{
 	nnoremap <C-J> <C-W><C-J>
