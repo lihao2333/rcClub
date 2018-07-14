@@ -4,10 +4,6 @@ alias la="ls -a"
 alias le="less"
 alias py="python"
 alias py3="python3"
-v_source()
-{
- vim `which $1`
-}
 f()
 {
 echo 1is $1
@@ -59,7 +55,6 @@ alias font_showzh="fc-list :lang=zh"
 alias font_fresh="fc-cache"
 
 alias v="vim"
-alias e="evince"
 
 gitall()
 {
