@@ -8,12 +8,6 @@ v_source()
 {
  vim `which $1`
 }
-f()
-{
-echo 1is $1
-echo 2is $2
-find $2 -name "$1"
-}
 up()
 {
 	tmp=..   # finally `cd` parameter
@@ -85,7 +79,6 @@ ldpathadd() {
     fi
   fi
 }
-alias show_gpu="lspci  | grep -i vga"
 gbk2utf8()
 {
 iconv -f gbk -t utf8 $1 -o tmp.tmp
@@ -95,19 +88,4 @@ utf82gbk()
 {
 iconv -f utf8 -t gbk $1  -o tmp.tmp
 mv tmp.tmp $1
-}
-msp_dbg()
-{
-mspdebug rf2500
-}
-msp_trans()
-{
-echo `pwd`
-sed -i "s/ _nop/__nop/g" $1
-sed -i "s/      __nop/  __nop/g" $1
-sed -i "s/_enable_interrupts/_EINT/g" $1
-sed -i "s/_disable_interrupts/_DINT/g" $1
-sed -i "s/ _bis_SR_register/__bis_SR_register/g" $1
-sed -i "s/      _bis_SR_register/__bis_SR_register/g" $1
-
 }
