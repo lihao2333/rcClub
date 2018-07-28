@@ -74,6 +74,14 @@ ldpathadd() {
     fi
   fi
 }
+pylog()
+{
+nohup python -u $1 > py.log 2>&1 &
+}
+py3log()
+{
+nohup python3 -u $1 > py3.log 2>&1 &
+}
 gbk2utf8()
 {
 iconv -f gbk -t utf8 $1 -o tmp.tmp

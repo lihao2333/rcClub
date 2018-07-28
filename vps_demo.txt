@@ -1,0 +1,9 @@
+user,host,ip,port,passwd
+up2,up2,10.112.133.166,22,1
+up2,up2_pri,10.42.0.186,22,1
+root,banwagong,23.105.194.46,29306,4I1Y5tEj8LRf
+geek,local,127.0.0.1,22,1
+prj1706036,chuang,10.110.210.18,22,1706036000
+geek,509,10.112.254.131,22,1
+geek,sun_privi,10.42.0.147,22,1
+root,liyuhan,120.79.214.105,22,Lyh1127jgmac

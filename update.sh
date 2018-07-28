@@ -10,3 +10,4 @@ echo total is `cat main.$1|wc -l`
 }
 syntaxis bashrc
 syntaxis vimrc
+echo export RC_ROOT=`pwd`>>main.bashrc
