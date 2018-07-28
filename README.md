@@ -11,9 +11,9 @@ v|vim
 c|cd
 ser_http|本地开启http 8000端口并且显示ip
 up|cd ..
-up|2 cd ../..
-up|3 cd ../../..
+up 2| cd ../..
+up 3| cd ../../..
 bx|在/tmp中创建一个临时文件夹
-pylog|xxx.py 后台执行xxx.py 并且将log输出为py.log
+pylog xxx.py |后台执行xxx.py 并且将log输出为py.log
 vps|查看远程自己所有的主机
-vps|1 登录vps列表中的第一项
+vps 1| 登录vps列表中的第一项
