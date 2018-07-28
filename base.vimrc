@@ -19,7 +19,7 @@
 
 "}
 "cursor{
-    set cursorline
+"    set cursorline
 "}
 "switch window{
     nnoremap <C-J> <C-W><C-J>
