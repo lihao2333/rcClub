@@ -3,6 +3,8 @@
 2. 在~/.bashrc最后添加`source ~/rcClub/main.bashrc`
 3. `sh ./update.sh`
 4. `source ~/.bashrc`
+5. 在~/.vimrc最后添加`source ~/rcClub/main.vimrc`
+6. `cp vps_demo.txt vps.txt`并且在vps.txt中管理自己的远程服务器用户名密码等信息. 改好后执行vps试下
 
 ## 使用
 命令|功能
